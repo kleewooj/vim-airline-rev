@@ -10,6 +10,8 @@ if &cp || v:version < 702 || (exists('g:loaded_airline') && g:loaded_airline)
   finish
 endif
 let g:loaded_airline = 1
+let g:airline_disable_statusline = 1
+let g:airline#extensions#tabline#enabled = 1
 
 let s:airline_initialized = 0
 function! s:init()
